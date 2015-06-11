@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
 
-    // Project configuration.
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
@@ -16,11 +15,6 @@ module.exports = function(grunt) {
                 includeAlmond: true,
                 out: 'build/<%= pkg.name %>.min.js'
             },
-            dev: {
-                options: {
-                    build: false // not working ?
-                }
-            },
             prod: {
                 options: {
                     build: true
@@ -32,8 +26,5 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-require');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-
-    // Default task(s).
-    grunt.registerTask('default', ['uglify']);
 
 };

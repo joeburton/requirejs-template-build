@@ -1,4 +1,3 @@
-// Filename: router.js
 define([
     'jquery',
     'underscore',
@@ -8,7 +7,6 @@ define([
 
     var AppRouter = Backbone.Router.extend({
         routes: {
-            // Define some URL routes
             'details': 'showDetailsView',
             '*path': 'showDetailsView'
         }

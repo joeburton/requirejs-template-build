@@ -12,7 +12,7 @@ define([
         render: function() {
 
             var data = {
-                name: 'name goes here'
+                name: 'name goes here...'
             };
 
             var compiledTemplate = _.template(personalDetails, data);
